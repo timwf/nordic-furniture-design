@@ -1,0 +1,247 @@
+{% comment %}
+    Renders a list of menu items
+    Accepts:
+    - linklist: {Object} Linklist Liquid object (required)
+    - wrapper_class: {String} CSS wrapper class for the navigation (optional)
+
+    Usage:
+    {% include 'site-nav', linklist: section.settings.main_linklist, wrapper_class: 'site-nav--centered' %}
+{% endcomment %}
+<ul class="site-nav list--inline{% if wrapper_class != blank %} {{ wrapper_class }}{% endif %}" id="SiteNav">
+  
+  
+  
+  <li class="furniture-tab"><a href="../collections/furniture">Furniture</a></li>
+  
+  <div class="twf-mega-menu">
+    <div class="twf-mega-menu-container">
+    <div class="twf-sub-section-one twf-flex-sub-menu">
+    
+
+      
+      <ul>
+        
+     
+        <li><a href="../collections/storage-shelving">STORAGE & SHELVING</a> </li>
+        <li><a href="../collections/chairs">CHAIRS</a></li>        
+        <li><a href="../collections/easy-chairs">EASY CHAIRS</a></li>
+        
+        
+        <li><a href="../collections/coffee-side-tables">COFFEE & SIDE TABLES</a></li>
+        
+        <li><a href="../collections/dinning-tables">DINING TABLES</a></li>
+        
+      
+        <li><a href="../collections/sofas-daybeds">SOFAS & DAYBEDs</a></li>
+        
+
+        <li><a href="../collections/stools-benches">STOOLS & BENCHES</a></li>
+        
+        <li><a href="../collections/office">OFFICE</a></li>
+        
+    
+        <li><a href="../collections/serving-trolleys">SERVING TROLLEYS</a></li> 
+      </ul>
+    
+    </div>
+    <div class="twf-sub-section-one twf-flex-sub-menu">
+      
+      
+      
+     <ul>      
+       <li>OUTDOOR FURNITURE</li>
+       <li>CHILDREN'S FURNITURE</li>
+       <li>BESTSELLERS</li>
+       <li>SKANDIUM DESIGN</li>
+       <li>QUICKSHIP</li>
+      </ul>
+
+    </div>
+    <div class="twf-sub-section-one twf-flex-sub-menu">
+      
+      <img class="submenu-feat-img" src="{{ 'promo-chair.png' | asset_url 	 }}" />
+    
+    </div>
+    <div class="twf-sub-section-one twf-flex-sub-menu">
+      
+      <ul>
+        	<li style="color: blue">TOP BRANDS</li>
+        	<li>CARL HANSEN</li>
+            <li>FRITZ HANSEN</li>
+            <li>FREDERICIA</li>
+            <li>GUBI&TRADITION</li>
+            <li>FRAMA</li>
+      </ul>
+    
+    </div>    
+    </div>
+      
+    
+  </div>
+  
+  
+  <li class="lighting-tab"><a href="../collections/lighting">Lighting</a></li>
+  
+  <div class="twf-mega-menu-lighting">
+    <div class="twf-mega-menu-container">
+    <div class="twf-sub-section-one twf-flex-sub-menu">
+      
+      <ul>
+        <li>FLOOR LAMPS
+		<li>PENDANT LAMPS
+		<li>TABLE LAMPS
+		<li>WALL & CEILING LAMPS
+		<li>OUTDOOR LIGHTING
+		<li>CHILDREN'S LIGHTING</li>
+      </ul>
+    
+    </div>
+    <div class="twf-sub-section-one twf-flex-sub-menu">
+      
+      
+     <img class="submenu-feat-img" style="margin-top:25px" src="{{ 'pendants.jpg' | asset_url 	 }}" />
+
+    </div>
+    <div class="twf-sub-section-one twf-flex-sub-menu">
+      
+      <img class="submenu-feat-img" style="margin-top:25px" src="{{ 'default_name.png' | asset_url 	 }}" />
+    
+    </div>
+    <div class="twf-sub-section-one twf-flex-sub-menu">
+      
+      <ul>
+        	<li style="color: blue">TOP BRANDS</li>
+        <li>TOP BRNADS</li>	
+            <li>LOUIS POULSEN</li>
+            <li>FLOS</li>
+            <li>SECTO</li>
+            <li>OLUCE</li>
+            <li>LE KLINT</li>
+        
+        
+        
+      </ul>
+    
+    </div>    
+    </div>
+      
+    
+  </div>
+  
+  
+  
+     <li class="accessories-tab">Accessories</li>
+  
+  <div class="twf-mega-menu-accessories">
+    <div class="twf-mega-menu-container">
+    <div class="twf-sub-section-one twf-flex-sub-menu">
+      
+      <ul>
+        <li>Accessories</li>
+        <li>PENDANT LAMPS</li>
+        <li>TABLE LAMPS</li>
+        <li>WALL & CEILING LAMPS</li>
+        <li>OUTDOOR LIGHTING</li>
+		<li>CHILDREN'S LIGHTING</li>
+      </ul>
+    
+    </div>
+    <div class="twf-sub-section-one twf-flex-sub-menu">
+      
+      
+     <img class="submenu-feat-img" style="margin-top:25px" src="{{ 'pendants.jpg' | asset_url 	 }}" />
+
+    </div>
+    <div class="twf-sub-section-one twf-flex-sub-menu">
+      
+      <img class="submenu-feat-img" style="margin-top:25px" src="{{ 'default_name.png' | asset_url 	 }}" />
+    
+    </div>
+    <div class="twf-sub-section-one twf-flex-sub-menu">
+      
+      <ul>
+        	<li style="color: blue">TOP BRANDS</li>
+        <li>TOP BRNADS</li>	
+            <li>LOUIS POULSEN</li>
+            <li>FLOS</li>
+            <li>SECTO</li>
+            <li>OLUCE</li>
+            <li>LE KLINT</li>
+        
+        
+        
+      </ul>
+    
+    </div>    
+    </div>
+      
+    
+  </div>
+    
+    <script>
+      let furniturTab = document.querySelector(".furniture-tab");
+      let megaMenu = document.querySelector(".twf-mega-menu");
+      let lightingTab = document.querySelector(".lighting-tab");
+      let megaMenuLighting = document.querySelector(".twf-mega-menu-lighting");
+      
+       let accessoriesTab = document.querySelector(".accessories-tab");
+      let megaMenuAccessories = document.querySelector(".twf-mega-menu-accessories");
+      
+      let siteNav = document.querySelector(".small--hide");
+      
+        siteNav.addEventListener("mouseleave", function(){
+      	megaMenu.classList.remove("show");
+          megaMenuLighting.classList.remove("show");
+        
+      });
+      
+      
+      
+      furniturTab.addEventListener("mouseover", function(){
+      	megaMenu.classList.add("show");
+        megaMenuLighting.classList.remove("show");
+      });
+      
+      megaMenu.addEventListener("mouseleave", function(){
+      	megaMenu.classList.remove("show");
+        
+      });
+      
+      
+    
+     
+      
+      lightingTab.addEventListener("mouseover", function(){
+      	megaMenuLighting.classList.add("show");
+        megaMenu.classList.remove("show");
+        megaMenuAccessories.classList.remove("show");
+      });
+      
+      megaMenuLighting.addEventListener("mouseleave", function(){
+      	megaMenuLighting.classList.remove("show");
+        megaMenuAccessories.classList.remove("show");
+      });
+     
+      
+      
+      accessoriesTab.addEventListener("mouseover", function(){
+      	megaMenuAccessories.classList.add("show");
+        megaMenu.classList.remove("show");
+      });
+      
+      megaMenuAccessories.addEventListener("mouseleave", function(){
+      	megaMenuAccessories.classList.remove("show");
+        
+      });
+      
+      
+      
+    </script>
+ 
+    
+    
+    
+    
+    
+    
+

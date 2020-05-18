@@ -1,0 +1,36 @@
+<h1>test</h1>
+<img class="banner-image" src="{{ section.settings.banner | img_url }}" alt="">
+
+
+{% schema %}
+{
+  "name": "Banner",
+  "settings": [
+  {
+      "type": "image_picker",
+      "id": "banner",
+      "label": "Logo image"
+    },
+  {
+    "id": "text-box-title",
+    "type": "text",
+    "label": "Heading",
+    "default": "terst here"
+  },
+  {
+    "id": "text-box-content",
+    "type": "richtext",
+    "label": "Add custon m",
+    "default": "<p>terst here</p>"
+
+  }
+
+  ]
+
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+{% javascript %}
+{% endjavascript %}

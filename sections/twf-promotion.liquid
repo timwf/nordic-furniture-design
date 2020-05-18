@@ -1,0 +1,54 @@
+<div class="twf-promo-banner-img">
+    <img class="twf-ptomo-sec-one-img" src="{{ 'promo-complete.png' | asset_img_url: '' }}"/>
+  
+  
+  
+</div>
+
+<!-- <div class="promotion-container">
+    <div class="promotion-section-one">
+      <img class="twf-ptomo-sec-one-img" src="{{ 'promo-chair.png' | asset_img_url: '' }}"/>
+    </div>
+    <div class="promotion-section-two">
+      <h1>The Clearence Event</h1>
+    </div>
+    <div class="promotion-section-three">
+      <img class="twf-ptomo-sec-three-img" src="{{ 'image5090.png' | asset_img_url: '' }}"/>
+    </div>
+</div> -->
+
+
+
+
+{% schema %}
+{
+  "name": "Promotion",
+  "settings": [
+  {
+      "type": "image_picker",
+      "id": "banner",
+      "label": "Logo image"
+    },
+  {
+    "id": "text-box-title",
+    "type": "text",
+    "label": "Heading",
+    "default": "terst here"
+  },
+  {
+    "id": "text-box-content",
+    "type": "richtext",
+    "label": "Add custon m",
+    "default": "<p>terst here</p>"
+
+  }
+
+  ]
+
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+{% javascript %}
+{% endjavascript %}
